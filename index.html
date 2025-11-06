@@ -1,0 +1,37 @@
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<div class="app-container">
+  <div class="header">
+    <h2>📅 AI 맞춤 학습 루틴 캘린더</h2>
+    <div class="auth">
+      <button id="signupBtn">회원가입</button>
+      <button id="loginBtn">로그인</button>
+      <button id="logoutBtn">로그아웃</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <!-- 캘린더 -->
+    <div class="calendar-section">
+      <div class="calendar-header">
+        <button id="prevMonth">◀</button>
+        <h3 id="monthTitle"></h3>
+        <button id="nextMonth">▶</button>
+      </div>
+      <div id="calendar" class="calendar-grid"></div>
+    </div>
+
+    <!-- AI 챗봇 -->
+    <div class="ai-section">
+      <h3>🤖 AI 루틴 추천 챗봇</h3>
+      <div id="chatBox" class="chat-box"></div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="AI에게 물어보세요..." />
+        <button id="sendBtn">전송</button>
+      </div>
+    </div>
+  </div>
+</div>
